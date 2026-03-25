@@ -1,0 +1,12 @@
+java -Xms512m -jar liquibase update --changelog-file db-changelog.xml --url=jdbc:postgresql://localhost:5432/sif --username=postgres  --password=postgres
+
+ java -Xms512m -jar liquibase.jar --classpath=postgresql-42.2.5.jar --changeLogFile=db-changelog.xml --url=jdbc:postgresql://localhost:5432/sif_dev04_leo --username=postgres --password=postgres --driver=org.postgresql.Driver update
+
+
+
+
+
+
+
+java -Xms512m -jar liquibase.jar --classpath=postgresql-42.2.5.jar --changeLogFile=db-changelog.xml --url="jdbc:postgresql://10.113.6.64:5432/sif_1194_uat" --username="postgres" --password="&H31VSmDPT?4?!qp$wQRsZIyUa8@OB<a" --driver=org.postgresql.Driver update
+
