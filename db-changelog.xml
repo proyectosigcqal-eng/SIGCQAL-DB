@@ -3,8 +3,10 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-	<include file="mi_nueva_migracion.sql" relativeToChangelogFile="true"/>
-	<include file="scripts\EDRM_00001_insertar_datos_tabla_areas.sql" relativeToChangelogFile="true"/>
-	
+    <include file="mi_nueva_migracion.sql" relativeToChangelogFile="true"/>
+
+    <include file="scripts/EDRM_00001_insertar_datos_tabla_areas.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/JJRM_00002_insertar_datos_estados.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/JJRM_00003_insertar_datos_municipios.sql" relativeToChangelogFile="true"/>
 			
 </databaseChangeLog>
