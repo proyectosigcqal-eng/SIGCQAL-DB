@@ -8,5 +8,7 @@
     <include file="scripts/EDRM_00001_insertar_datos_tabla_areas.sql" relativeToChangelogFile="true"/>
     <include file="scripts/JJRM_00002_insertar_datos_estados.sql" relativeToChangelogFile="true"/>
     <include file="scripts/JJRM_00003_insertar_datos_municipios.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_00004_alter_table_cat_estatus.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_00005_insertar_datos_car_estatus.sql" relativeToChangelogFile="true"/>
 			
 </databaseChangeLog>
