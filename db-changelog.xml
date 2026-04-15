@@ -12,5 +12,5 @@
 	<include file="scripts/HIRM_00005_insertar_datos_car_estatus.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/ADRC_00006_modificación_tabla_areas.sql" relativeToChangelogFile="true"/>
     <include file="scripts/ARRM_00007_alter_table_roles_desc.sql" relativeToChangelogFile="true"/>	
-			
+	<include file="scripts/RRM_00008_modificar_id_folio.sql" relativeToChangelogFile="true"/>			
 </databaseChangeLog>
