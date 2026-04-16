@@ -14,5 +14,6 @@
     <include file="scripts/ARRM_00007_alter_table_roles_desc.sql" relativeToChangelogFile="true"/>	
 	<include file="scripts/RRM_00008_modificar_id_folio.sql" relativeToChangelogFile="true"/>		
     <include file="scripts/JJRM_00009_creacion_alteracion_tablas.sql" relativeToChangelogFile="true"/>	
-    <include file="scripts/RRM_00010_agregar_acuse.sql" relativeToChangelogFile="true"/>	
+    <include file="scripts/RRM_00010_agregar_acuse.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/JJRM_00011_correccion_relaciones_memo_usuarios.sql" relativeToChangelogFile="true"/>	
 </databaseChangeLog>
