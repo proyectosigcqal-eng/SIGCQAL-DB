@@ -3,8 +3,19 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-	<include file="mi_nueva_migracion.sql" relativeToChangelogFile="true"/>
-	<include file="scripts\EDRM_00001_insertar_datos_tabla_areas.sql" relativeToChangelogFile="true"/>
-	
-			
+    <include file="mi_nueva_migracion.sql" relativeToChangelogFile="true"/>
+
+    <include file="scripts/EDRM_00001_insertar_datos_tabla_areas.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/JJRM_00002_insertar_datos_estados.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/JJRM_00003_insertar_datos_municipios.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_00004_alter_table_cat_estatus.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_00005_insertar_datos_car_estatus.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ADRC_00006_modificación_tabla_areas.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/ARRM_00007_alter_table_roles_desc.sql" relativeToChangelogFile="true"/>	
+	<include file="scripts/RRM_00008_modificar_id_folio.sql" relativeToChangelogFile="true"/>		
+    <include file="scripts/JJRM_00009_creacion_alteracion_tablas.sql" relativeToChangelogFile="true"/>	
+    <include file="scripts/RRM_00010_agregar_acuse.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/JJRM_00011_correccion_relaciones_memo_usuarios.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ARRM_00012_tabla_seguimiento_memorandum.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/ARRM_00013_tabla_seguimiento_correspondencia.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>
