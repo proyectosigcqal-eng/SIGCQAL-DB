@@ -3,7 +3,7 @@
 
 CREATE TABLE seguimiento_correspondencia (
    	id_seguimiento_correspondencia SERIAL PRIMARY KEY,
-	id_folio INT NOT NULL,
+	id_correspondencia INT NOT NULL,
 	folio_respuesta VARCHAR(50) NOT NULL,
     respuesta_seguimiento_correspondencia TEXT,
     fecha_resolucion DATE NOT NULL,
@@ -14,5 +14,5 @@ CREATE TABLE seguimiento_correspondencia (
     fecha_registro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
 	    CONSTRAINT fk_estatus FOREIGN KEY (id_estatus) REFERENCES cat_estatus(id_estatus),
-	    CONSTRAINT fk_correspondencia FOREIGN KEY (id_folio) REFERENCES correspondencia(id_folio)
+	    CONSTRAINT fk_correspondencia FOREIGN KEY (id_correspondencia) REFERENCES correspondencia(id_correspondencia)
     );
