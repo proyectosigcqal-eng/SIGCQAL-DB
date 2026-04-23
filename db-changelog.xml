@@ -15,5 +15,7 @@
 	<include file="scripts/RRM_00008_modificar_id_folio.sql" relativeToChangelogFile="true"/>		
     <include file="scripts/JJRM_00009_creacion_alteracion_tablas.sql" relativeToChangelogFile="true"/>	
     <include file="scripts/RRM_00010_agregar_acuse.sql" relativeToChangelogFile="true"/>
-    <include file="scripts/JJRM_00011_correccion_relaciones_memo_usuarios.sql" relativeToChangelogFile="true"/>	
+    <include file="scripts/JJRM_00011_correccion_relaciones_memo_usuarios.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ARRM_00012_tabla_seguimiento_memorandum.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/ARRM_00013_tabla_seguimiento_correspondencia.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>
