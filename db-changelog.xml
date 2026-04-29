@@ -20,4 +20,9 @@
     <include file="scripts/ARRM_00013_tabla_seguimiento_correspondencia.sql" relativeToChangelogFile="true"/>
     <include file="scripts/ADRC_00014_alter_table_correspondencia_area.sql" relativeToChangelogFile="true"/>
     <include file="scripts/RRM_00015_acuse_correspondencia.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000016_creacion_tablas_modulo2_atencion_juridica.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000017_creacion_esquemas.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000018_agregar_tablas_esquema_catalogos.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000019_agregar_tablas_esquema_correspondencia.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000020_agregar_tablas_esquema_atencion_juridica.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>
