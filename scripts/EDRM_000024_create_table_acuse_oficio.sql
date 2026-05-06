@@ -1,6 +1,9 @@
 --liquibase formatted sql
 --changeset Erick Rivera: Creacion tabla acuse oficio en esquema correspondencia
-CREATE TABLE correspondencia.acuse_oficio (
+
+CREATE SCHEMA IF NOT EXISTS correspondencia;
+
+CREATE TABLE IF NOT EXISTS correspondencia.acuse_oficio (
     -- ID autoincremental para el registro del acuse
     id_acuse_oficio SERIAL4 PRIMARY KEY,
     
