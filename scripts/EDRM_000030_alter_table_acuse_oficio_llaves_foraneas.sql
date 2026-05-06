@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset Erick Rivera:agregar_fks_acuse_oficio_v2
+--changeset Erick Rivera:agregar_fks_acuse_vFINAL
 --comment: Agregando llaves foraneas a la tabla acuse_oficio de forma segura
 
 -- Eliminamos las llaves si ya existen para evitar errores de duplicidad

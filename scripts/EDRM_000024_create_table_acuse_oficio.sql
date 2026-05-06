@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset Erick Rivera: Creacion tabla acuse oficio en esquema correspondencia
+--changeset Erick Rivera:crear_tabla_acuse_vFINAL
 
 CREATE SCHEMA IF NOT EXISTS correspondencia;
 

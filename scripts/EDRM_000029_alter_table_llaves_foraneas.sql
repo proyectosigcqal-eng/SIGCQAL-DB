@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset Erick Rivera:agregar_fks_oficio_v2
+--changeset Erick Rivera:agregar_fks_oficio_vFINAL
 
 -- Limpieza preventiva
 ALTER TABLE correspondencia.oficio DROP CONSTRAINT IF EXISTS fk_oficio_correspondencia;
