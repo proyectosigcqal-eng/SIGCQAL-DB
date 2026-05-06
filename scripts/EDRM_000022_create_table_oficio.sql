@@ -1,6 +1,6 @@
 
 --liquibase formatted sql
---changeset Erick Rivera: Creacion tabla oficio en esquema correspondencia
+--changeset Erick Rivera: crear_tabla_oficio_vFINAL
 
 CREATE TABLE IF NOT EXISTS correspondencia.oficio (
     -- ID serial para la clave primaria
