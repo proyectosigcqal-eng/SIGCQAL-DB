@@ -26,5 +26,12 @@
 	<include file="scripts/EDRM_000019_agregar_tablas_esquema_correspondencia.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000020_agregar_tablas_esquema_atencion_juridica.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000021_renombrado_tabla_acuse_memorandum.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000022_create_table_oficio.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000023_create_table_seguimiento_oficio.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000024_create_table_acuse_oficio.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000025_create_table_tipo_correspondencia.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000026_alter_table_correspondencia.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000027_alter_table_correspondencia_llave_foranea.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000028_insert_table_tipo_correspondencia.sql" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>
