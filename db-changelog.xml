@@ -33,5 +33,8 @@
 	<include file="scripts/EDRM_000026_alter_table_correspondencia.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000027_alter_table_correspondencia_llave_foranea.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000028_insert_table_tipo_correspondencia.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000029_alter_table_llaves_foraneas.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000030_alter_table_acuse_oficio_llaves_foraneas.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000031_alter_table_seguimiento_oficio.sql" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>
