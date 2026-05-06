@@ -1,21 +1,19 @@
 --liquibase formatted sql
 
---changeset Erick Rivera:agregar_fks_acuse_oficio_v1 splitStatements:false
---comment: Agregando llaves foraneas a la tabla acuse_oficio con validacion
+--changeset Erick Rivera:agregar_fks_acuse_oficio_v2
+--comment: Agregando llaves foraneas a la tabla acuse_oficio de forma segura
 
-DO $$ 
-BEGIN 
-    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'fk_acuse_oficio_rel_oficio') THEN
-        ALTER TABLE correspondencia.acuse_oficio 
-        ADD CONSTRAINT fk_acuse_oficio_rel_oficio 
-        FOREIGN KEY (id_oficio) 
-        REFERENCES correspondencia.oficio(id_oficio);
-    END IF;
+-- Eliminamos las llaves si ya existen para evitar errores de duplicidad
+ALTER TABLE correspondencia.acuse_oficio DROP CONSTRAINT IF EXISTS fk_acuse_oficio_rel_oficio;
+ALTER TABLE correspondencia.acuse_oficio DROP CONSTRAINT IF EXISTS fk_acuse_oficio_usuario_revisor;
 
-    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'fk_acuse_oficio_usuario_revisor') THEN
-        ALTER TABLE correspondencia.acuse_oficio 
-        ADD CONSTRAINT fk_acuse_oficio_usuario_revisor 
-        FOREIGN KEY (id_usuario_revisor) 
-        REFERENCES catalogos.usuarios(id_usuario);
-    END IF;
-END $$;
+-- Creamos las llaves foraneas
+ALTER TABLE correspondencia.acuse_oficio 
+    ADD CONSTRAINT fk_acuse_oficio_rel_oficio 
+    FOREIGN KEY (id_oficio) 
+    REFERENCES correspondencia.oficio(id_oficio);
+
+ALTER TABLE correspondencia.acuse_oficio 
+    ADD CONSTRAINT fk_acuse_oficio_usuario_revisor 
+    FOREIGN KEY (id_usuario_revisor) 
+    REFERENCES catalogos.usuarios(id_usuario);
