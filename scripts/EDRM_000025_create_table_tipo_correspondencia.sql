@@ -13,4 +13,3 @@ CREATE TABLE catalogos.tipo_correspondencia (
     CONSTRAINT uq_tipo_correspondencia_descripcion UNIQUE (descripcion)
 );
 --rollback DROP TABLE catalogos.tipo_correspondencia;
-);
