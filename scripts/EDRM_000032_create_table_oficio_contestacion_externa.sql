@@ -1,6 +1,6 @@
 --liquibase formatted sql
 --changeset Erick Rivera:crear_tabla_contestacion_oficio_externo_vFINAL
-CREATE TABLE correspondencia.oficio_contestacion_externa (
+CREATE TABLE IF NOT EXISTS correspondencia.oficio_contestacion_externa (
     -- PK propia de la tabla
     id_oficio_contestacion serial4 NOT NULL,
     
