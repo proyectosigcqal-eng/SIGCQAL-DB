@@ -37,5 +37,6 @@
 	<include file="scripts/EDRM_000030_alter_table_acuse_oficio_llaves_foraneas.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000031_alter_table_seguimiento_oficio.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000032_create_table_oficio_contestacion_externa.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000033_create_table_oficio_contestacion.sql" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>
