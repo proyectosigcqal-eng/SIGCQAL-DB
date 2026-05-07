@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset Erick Rivera: crear_tabla_tipo_correspondencia_vFINAL
+--changeset Erick Rivera: crear_tabla_tipo_correspondencia_vFINAl1
 -- Crear la tabla de catálogo 'tipo_correspondencia' en el esquema 'correspondencia'
 CREATE TABLE catalogos.tipo_correspondencia (
     -- ID autoincremental de la tabla

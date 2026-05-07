@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset José Juan Rivera Merino: Renombrado tabla acuse_recibo_interno a acuse_memorandum
+--changeset José Juan Rivera Merino: renombrado_forzado_v2
 
 ALTER TABLE correspondencia.acuserecibointerno  RENAME TO acuse_memorandum;
 
