@@ -3,7 +3,7 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-    <include file="mi_nueva_migracion.sql" relativeToChangelogFile="true"/>
+    <include file="backup_13052026.sql" relativeToChangelogFile="true"/>
 
     <include file="scripts/EDRM_00001_insertar_datos_tabla_areas.sql" relativeToChangelogFile="true"/>
     <include file="scripts/JJRM_00002_insertar_datos_estados.sql" relativeToChangelogFile="true"/>
@@ -40,5 +40,6 @@
 	<include file="scripts/EDRM_000033_create_table_oficio_contestacion.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000034_alter_table_seguimiento_correspondenicia_memorandum_oficio.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000035_create_table_roles_usuarios.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000036_estructura_datos_modulo2.sql" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>
