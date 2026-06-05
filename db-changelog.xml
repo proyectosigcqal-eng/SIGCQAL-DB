@@ -50,6 +50,7 @@
 	<include file="scripts/EDRM_000043_alter_table_detalle_asesoria.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000044_alter_table_personas.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/RRM_000045_alter_table_expediente.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000046_create_dias_inhabiles_alter_personas.sql" relativeToChangelogFile="true"/>
 	
 	
 </databaseChangeLog>
