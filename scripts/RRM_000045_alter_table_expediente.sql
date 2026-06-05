@@ -2,8 +2,8 @@
 
 --changeset RodrigoRivera:alter-tabla-expedientes dbms:postgresql
 --comment: Alteracion de la tabla expedientes.
-ALTER TABLE sustantiva.expedientes 
-    ADD COLUMN id_representante_legal INT;
+ALTER TABLE sustantiva.expedientes
+ADD COLUMN IF NOT EXISTS id_representante_legal INT;
 
 ALTER TABLE sustantiva.expedientes
     ADD CONSTRAINT fk_expedientes_representante_legal
