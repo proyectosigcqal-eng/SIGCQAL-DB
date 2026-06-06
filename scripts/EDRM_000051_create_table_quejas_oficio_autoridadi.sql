@@ -1,21 +1,17 @@
 -- liquibase formatted sql
 
--- changeset ErickRivera:5-crear-tabla-sustantiva-quejas-ari dbms:postgresql
--- comment: Creacion de la tabla quejas_ari exactamente como fue provista.
-CREATE TABLE IF NOT EXISTS sustantiva.quejas_ari (
-    id_ari SERIAL PRIMARY KEY,
-    id_queja INT UNIQUE NOT NULL,           -- Hereda todo el contexto transaccional
-    id_cir INT UNIQUE NOT NULL,             -- Vinculación obligatoria del paso anterior
+-- changeset ErickRivera:7-crear-tabla-sustantiva-quejas-oficios-autoridad dbms:postgresql runOnChange:true
+-- comment: Creacion de la tabla quejas_oficios_autoridad exactamente como fue provista de forma idempotente.
+CREATE TABLE IF NOT EXISTS sustantiva.quejas_oficios_autoridad (
+    id_oficio_autoridad SERIAL PRIMARY KEY,
+    id_ari INT NOT NULL,                     
     
-    -- Datos propios del ARI:
-    num_expediente_oficial VARCHAR(50) UNIQUE NOT NULL, -- Ej: CEDECON-ZAC-QR-020/2025
-    sintesis_actos_omisiones TEXT NOT NULL,           -- Transcripción de hechos violatorios
-    articulos_vulnerados_autoridad TEXT NOT NULL,      -- Ej: "Art. 115 frac I del Código Fiscal..."
-    nombre_encargado_firma VARCHAR(150) NOT NULL,      -- Lic. José David Rivera Sesma (Dinámico)
+    -- Oficio de salida (Para firma del comisionado)
+    num_oficio_comisionado VARCHAR(50) UNIQUE NOT NULL,
+    fecha_envio_oficio DATE NOT NULL,
     
-    fecha_acuerdo DATE NOT NULL DEFAULT CURRENT_DATE,
-    ruta_pdf_ari VARCHAR(255) NOT NULL,                -- PDF del ARI firmado
+    -- Notificación inicial obligatoria al quejoso (A más tardar al día siguiente)
+    fecha_notificacion_quejoso DATE,
     
-    FOREIGN KEY (id_queja) REFERENCES sustantiva.quejas(id_queja),
-    FOREIGN KEY (id_cir) REFERENCES sustantiva.quejas_cir(id_cir)
+    FOREIGN KEY (id_ari) REFERENCES sustantiva.quejas_ari(id_ari)
 );
