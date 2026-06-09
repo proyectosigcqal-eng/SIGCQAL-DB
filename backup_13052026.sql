@@ -1,3 +1,5 @@
+--liquibase formatted sql
+--changeset sistema:backup_inicial splitStatements:false
 --
 -- PostgreSQL database dump
 --
@@ -18,16 +20,6 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
-DROP DATABASE "SIGCQAL_dev";
---
--- TOC entry 5431 (class 1262 OID 54067)
--- Name: SIGCQAL_dev; Type: DATABASE; Schema: -; Owner: -
---
-
-CREATE DATABASE "SIGCQAL_dev" WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'Spanish_Mexico.1252';
-
-
-\connect "SIGCQAL_dev"
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
