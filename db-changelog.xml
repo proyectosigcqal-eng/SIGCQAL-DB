@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
@@ -58,9 +58,10 @@
 	<include file="scripts/EDRM_000051_create_table_quejas_oficio_autoridadi.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000052_create_table_respuesta_autoridadi.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/EDRM_000053_create_table_acci.sql" relativeToChangelogFile="true"/>
-	<include file="scripts/EDRM_000054_alter_table_catalogo_estatusqueja.sql" relativeToChangelogFile="true"/>
-	<include file="scripts/EDRM_000055_insertar_datos_tabla_estatus_queja.sql" relativeToChangelogFile="true"/>
-	
-	
+	<include file="scripts/RRM_000054_create_table_plantilla_queja_ari.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RRM_000055_alter_table_quejas_ari.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000056_alter_expedientes.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ADRC_000057_alter_table_expediente_informe_autoridad.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RRM_000058_alter_queja_ari.sql" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>
