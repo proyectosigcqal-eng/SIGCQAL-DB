@@ -69,8 +69,11 @@
 	<include file="scripts/ARRM_000063_crear_tabla_cierre_expediente_actualizacion_estatus_expediente.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/ARRM_000064_alter_tabla_cierre_expediente_actualizacion_estatus_expediente.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/ARRM_000065_insert_tabla_cierre_expediente_actualizacion_estatus_expediente.sql" relativeToChangelogFile="true"/>
-	<include file="scripts/JJRM_000066_create_bitacora_asignacion.sql" relativeToChangelogFile="true"/>
-	<include file="scripts/JJRM_000067_rename_id_autoridad_to_id_detalle_asesoria.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RRM_000066_alter_acuse.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000067_create_bitacora_asignacion.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000068_rename_id_autoridad_to_id_detalle_asesoria.sql" relativeToChangelogFile="true"/>
 	
+
+
 	
 </databaseChangeLog>
