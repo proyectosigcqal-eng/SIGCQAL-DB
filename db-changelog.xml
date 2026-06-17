@@ -72,7 +72,7 @@
 	<include file="scripts/RRM_000066_alter_acuse.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000067_create_bitacora_asignacion.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000068_rename_id_autoridad_to_id_detalle_asesoria.sql" relativeToChangelogFile="true"/>
-	
+	<include file="scripts/RRM_000069_alter_ari_abreviatura.sql" relativeToChangelogFile="true"/>
 
 
 	
