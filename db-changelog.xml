@@ -73,6 +73,8 @@
 	<include file="scripts/JJRM_000067_create_bitacora_asignacion.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000068_rename_id_autoridad_to_id_detalle_asesoria.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/RRM_000069_alter_ari_abreviatura.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_000070_drop_table_resolucion_final.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_000071_create_table_resolucion_final.sql" relativeToChangelogFile="true"/>
 
 
 	
