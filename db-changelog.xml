@@ -76,6 +76,7 @@
 	<include file="scripts/HIRM_000070_drop_table_resolucion_final.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/HIRM_000071_create_table_resolucion_final.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000072_create_table_oficio_notificacion.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000073_alter_quejas_respuestas.sql" relativeToChangelogFile="true"/>
 
 
 	
