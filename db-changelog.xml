@@ -3,7 +3,7 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-  
+	
 
     <include file="scripts/EDRM_00001_insertar_datos_tabla_areas.sql" relativeToChangelogFile="true"/>
     <include file="scripts/JJRM_00002_insertar_datos_estados.sql" relativeToChangelogFile="true"/>
@@ -77,7 +77,8 @@
 	<include file="scripts/HIRM_000071_create_table_resolucion_final.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000072_create_table_oficio_notificacion.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000073_alter_quejas_respuestas.sql" relativeToChangelogFile="true"/>
-
+	<include file="scripts/HIRM_00074_alter_table_resolucion_final.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ADRC_00075_alter_tabla_quejas_cir.sql" relativeToChangelogFile="true"/>
 
 	
 </databaseChangeLog>
