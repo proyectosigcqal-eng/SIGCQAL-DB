@@ -80,6 +80,8 @@
 	<include file="scripts/HIRM_00074_alter_table_resolucion_final.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/ADRC_00075_alter_tabla_quejas_cir.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000076_alter_acci_asesores.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RRM_000077_create_table_queja_rl_cir.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RRM_000078_create_table_rl_cir.sql" relativeToChangelogFile="true"/>
 
 	
 </databaseChangeLog>
