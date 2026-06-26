@@ -3,7 +3,7 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-  
+	
 
     <include file="scripts/EDRM_00001_insertar_datos_tabla_areas.sql" relativeToChangelogFile="true"/>
     <include file="scripts/JJRM_00002_insertar_datos_estados.sql" relativeToChangelogFile="true"/>
@@ -62,5 +62,24 @@
 	<include file="scripts/RRM_000055_alter_table_quejas_ari.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000056_alter_expedientes.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/ADRC_000057_alter_table_expediente_informe_autoridad.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RRM_000058_alter_queja_ari.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000060_alter_table_catalogo_estatusqueja.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/EDRM_000061_insertar_datos_tabla_estatus_queja.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_00062_crear_tabla_resolucion_final.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ARRM_000063_crear_tabla_cierre_expediente_actualizacion_estatus_expediente.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ARRM_000064_alter_tabla_cierre_expediente_actualizacion_estatus_expediente.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ARRM_000065_insert_tabla_cierre_expediente_actualizacion_estatus_expediente.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RRM_000066_alter_acuse.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000067_create_bitacora_asignacion.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000068_rename_id_autoridad_to_id_detalle_asesoria.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/RRM_000069_alter_ari_abreviatura.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_000070_drop_table_resolucion_final.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_000071_create_table_resolucion_final.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000072_create_table_oficio_notificacion.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000073_alter_quejas_respuestas.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/HIRM_00074_alter_table_resolucion_final.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ADRC_00075_alter_tabla_quejas_cir.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/JJRM_000076_alter_acci_asesores.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ADRC_000077_alter_table_representacion_legal.sql" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>
