@@ -82,6 +82,6 @@
 	<include file="scripts/JJRM_000076_alter_acci_asesores.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/RRM_000077_create_table_queja_rl_cir.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/RRM_000078_create_table_rl_cir.sql" relativeToChangelogFile="true"/>
-
+	<include file="scripts/ADRC_000079_alter_table_representacion_legal.sql" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>
