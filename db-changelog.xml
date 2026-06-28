@@ -83,5 +83,8 @@
 	<include file="scripts/RRM_000077_create_table_queja_rl_cir.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/RRM_000078_create_table_rl_cir.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/ADRC_000079_alter_table_representacion_legal.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ARRM_00080_add_column_es_personal_to_personas.sql" relativeToChangelogFile="true"/>
+	<include file="scripts/ARRM_00081_create_table_personal.sql" relativeToChangelogFile="true"/>
+	
 	
 </databaseChangeLog>
