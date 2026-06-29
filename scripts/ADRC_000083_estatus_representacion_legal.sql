@@ -24,10 +24,12 @@ INSERT INTO catalogos.estatus_representacion_legal (nombre_estatus, orden, descr
 ('Concluido', 10, 'El caso de representación legal ha finalizado por completo.')
 ON CONFLICT (nombre_estatus) DO NOTHING;
 
--- 2) Agregar FK a representacion_legal
+-- 2) Agregar columna FK a representacion_legal
 ALTER TABLE sustantiva.representacion_legal
 ADD COLUMN IF NOT EXISTS id_estatus INT;
 
+--changeset ADRC:add_fk_representacion_legal endDelimiter:\n/
+-- Usamos un changeset separado con endDelimiter específico para el bloque anónimo
 DO $$
 BEGIN
     IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname = 'fk_rep_legal_estatus') THEN
@@ -36,3 +38,4 @@ BEGIN
         FOREIGN KEY (id_estatus) REFERENCES catalogos.estatus_representacion_legal(id_estatus);
     END IF;
 END $$;
+/
