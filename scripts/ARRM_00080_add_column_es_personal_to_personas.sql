@@ -1,5 +1,6 @@
 --liquibase formatted sql
---changeset anarivera:add_column_es_personal_to_personas endDelimiter:;
+
+--changeset anarivera:add_column_es_personal_to_personas splitStatements:false
 --comment: Se agrega columna es_personal a la tabla personas de forma segura
 DO $$ 
 BEGIN 
