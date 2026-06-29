@@ -86,6 +86,6 @@
 	<include file="scripts/ARRM_00080_add_column_es_personal_to_personas.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/ARRM_00081_create_table_personal.sql" relativeToChangelogFile="true"/>
 	<include file="scripts/JJRM_000082_create_table_amparo.sql" relativeToChangelogFile="true"/>
-	
+	<include file="scripts/ADRC_000083_estatus_representacion_legal.sql" relativeToChangelogFile="true"/>
 	
 </databaseChangeLog>
