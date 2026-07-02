@@ -5,7 +5,7 @@
 -- Dumped from database version 16.1
 -- Dumped by pg_dump version 16.1
 
--- Started on 2026-07-02 01:34:38
+-- Started on 2026-07-02 01:52:59
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -3651,6 +3651,29 @@ INSERT INTO catalogos.areas VALUES (14, 'Recursos Materiales', NULL);
 -- Data for Name: autoridades; Type: TABLE DATA; Schema: catalogos; Owner: -
 --
 
+INSERT INTO catalogos.autoridades VALUES (1, 'Junta Intermunicipal de Agua Potable y Alcantarillado de Zacatecas (JIAPAZ)');
+INSERT INTO catalogos.autoridades VALUES (2, 'Secretaría de Finanzas del Estado de Zacatecas (SEFIN)');
+INSERT INTO catalogos.autoridades VALUES (3, 'Secretaría General de Gobierno');
+INSERT INTO catalogos.autoridades VALUES (4, 'Secretaría de Seguridad Pública');
+INSERT INTO catalogos.autoridades VALUES (5, 'Secretaría de Administración');
+INSERT INTO catalogos.autoridades VALUES (6, 'Secretaría de la Función Pública');
+INSERT INTO catalogos.autoridades VALUES (7, 'Secretaría de Infraestructura (SINFRA)');
+INSERT INTO catalogos.autoridades VALUES (8, 'Secretaría de Economía');
+INSERT INTO catalogos.autoridades VALUES (9, 'Secretaría de Educación de Zacatecas (SEDUZAC)');
+INSERT INTO catalogos.autoridades VALUES (10, 'Secretaría de Salud de Zacatecas (SSZ)');
+INSERT INTO catalogos.autoridades VALUES (11, 'Secretaría de Desarrollo Urbano, Vivienda y Ordenamiento Territorial (SEDUVOT)');
+INSERT INTO catalogos.autoridades VALUES (12, 'Secretaría de Agua y Medio Ambiente (SAMA)');
+INSERT INTO catalogos.autoridades VALUES (13, 'H. Ayuntamiento de Zacatecas');
+INSERT INTO catalogos.autoridades VALUES (14, 'H. Ayuntamiento de Guadalupe');
+INSERT INTO catalogos.autoridades VALUES (15, 'H. Ayuntamiento de Fresnillo');
+INSERT INTO catalogos.autoridades VALUES (16, 'H. Ayuntamiento de Jerez');
+INSERT INTO catalogos.autoridades VALUES (17, 'H. Ayuntamiento de Calera');
+INSERT INTO catalogos.autoridades VALUES (18, 'H. Ayuntamiento de Sombrerete');
+INSERT INTO catalogos.autoridades VALUES (19, 'H. Ayuntamiento de Rio Grande');
+INSERT INTO catalogos.autoridades VALUES (20, 'H. Ayuntamiento de Jalpa');
+INSERT INTO catalogos.autoridades VALUES (21, 'H. Ayuntamiento de Juchipila');
+INSERT INTO catalogos.autoridades VALUES (22, 'H. Ayuntamiento de Ojocaliente');
+INSERT INTO catalogos.autoridades VALUES (23, 'H. Ayuntamiento de Noctistlán de Juárez');
 
 
 --
@@ -4548,7 +4571,7 @@ SELECT pg_catalog.setval('catalogos.areas_id_area_seq', 14, true);
 -- Name: autoridades_id_autoridad_seq; Type: SEQUENCE SET; Schema: catalogos; Owner: -
 --
 
-SELECT pg_catalog.setval('catalogos.autoridades_id_autoridad_seq', 1, false);
+SELECT pg_catalog.setval('catalogos.autoridades_id_autoridad_seq', 23, true);
 
 
 --
@@ -7174,7 +7197,7 @@ ALTER TABLE ONLY sustantiva.rl_cir
     ADD CONSTRAINT rl_cir_id_expediente_fkey FOREIGN KEY (id_expediente) REFERENCES sustantiva.expedientes(id_expediente);
 
 
--- Completed on 2026-07-02 01:34:39
+-- Completed on 2026-07-02 01:52:59
 
 --
 -- PostgreSQL database dump complete
