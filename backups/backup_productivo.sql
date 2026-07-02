@@ -5,7 +5,7 @@
 -- Dumped from database version 16.1
 -- Dumped by pg_dump version 16.1
 
--- Started on 2026-07-02 01:52:59
+-- Started on 2026-07-02 01:55:12
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -3636,13 +3636,6 @@ INSERT INTO catalogos.areas VALUES (4, 'Transparencia', NULL);
 INSERT INTO catalogos.areas VALUES (5, 'Administrativa', NULL);
 INSERT INTO catalogos.areas VALUES (6, 'Archivo', NULL);
 INSERT INTO catalogos.areas VALUES (7, 'Recursos Materiales', NULL);
-INSERT INTO catalogos.areas VALUES (8, 'Correspondencia', NULL);
-INSERT INTO catalogos.areas VALUES (9, 'Planeación', NULL);
-INSERT INTO catalogos.areas VALUES (10, 'Jurídica', NULL);
-INSERT INTO catalogos.areas VALUES (11, 'Transparencia', NULL);
-INSERT INTO catalogos.areas VALUES (12, 'Administrativa', NULL);
-INSERT INTO catalogos.areas VALUES (13, 'Archivo', NULL);
-INSERT INTO catalogos.areas VALUES (14, 'Recursos Materiales', NULL);
 
 
 --
@@ -7197,7 +7190,7 @@ ALTER TABLE ONLY sustantiva.rl_cir
     ADD CONSTRAINT rl_cir_id_expediente_fkey FOREIGN KEY (id_expediente) REFERENCES sustantiva.expedientes(id_expediente);
 
 
--- Completed on 2026-07-02 01:52:59
+-- Completed on 2026-07-02 01:55:13
 
 --
 -- PostgreSQL database dump complete
