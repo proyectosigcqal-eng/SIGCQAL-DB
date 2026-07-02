@@ -5,7 +5,7 @@
 -- Dumped from database version 16.1
 -- Dumped by pg_dump version 16.1
 
--- Started on 2026-07-02 00:46:23
+-- Started on 2026-07-02 01:34:38
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -4046,6 +4046,7 @@ INSERT INTO catalogos.usuarios VALUES (1, 1, 5, 'jdavidrivera', '$2a$06$Gr7ykiKo
 -- Data for Name: usuarios_roles; Type: TABLE DATA; Schema: catalogos; Owner: -
 --
 
+INSERT INTO catalogos.usuarios_roles VALUES (1, 1, 1, '2026-07-02 00:00:00');
 
 
 --
@@ -4763,7 +4764,7 @@ SELECT pg_catalog.setval('catalogos.usuarios_id_usuario_seq', 1, false);
 -- Name: usuarios_roles_id_usuario_rol_seq; Type: SEQUENCE SET; Schema: catalogos; Owner: -
 --
 
-SELECT pg_catalog.setval('catalogos.usuarios_roles_id_usuario_rol_seq', 1, false);
+SELECT pg_catalog.setval('catalogos.usuarios_roles_id_usuario_rol_seq', 1, true);
 
 
 --
@@ -7173,7 +7174,7 @@ ALTER TABLE ONLY sustantiva.rl_cir
     ADD CONSTRAINT rl_cir_id_expediente_fkey FOREIGN KEY (id_expediente) REFERENCES sustantiva.expedientes(id_expediente);
 
 
--- Completed on 2026-07-02 00:46:24
+-- Completed on 2026-07-02 01:34:39
 
 --
 -- PostgreSQL database dump complete
