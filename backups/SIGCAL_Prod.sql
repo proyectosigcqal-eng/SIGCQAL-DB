@@ -5,7 +5,7 @@
 -- Dumped from database version 16.1
 -- Dumped by pg_dump version 16.1
 
--- Started on 2026-07-07 22:12:34
+-- Started on 2026-07-07 23:48:35
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -1089,7 +1089,7 @@ ALTER SEQUENCE catalogos.tipo_tramite_id_tipo_tramite_seq OWNED BY catalogos.tip
 CREATE TABLE catalogos.user_sessions (
     id bigint NOT NULL,
     user_id bigint NOT NULL,
-    session_id character varying(100) NOT NULL,
+    session_id text NOT NULL,
     ip_address character varying(45),
     user_agent character varying(500),
     last_active timestamp(6) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
@@ -7652,7 +7652,7 @@ ALTER TABLE ONLY sustantiva.rl_cir
     ADD CONSTRAINT rl_cir_id_expediente_fkey FOREIGN KEY (id_expediente) REFERENCES sustantiva.expedientes(id_expediente);
 
 
--- Completed on 2026-07-07 22:12:34
+-- Completed on 2026-07-07 23:48:35
 
 --
 -- PostgreSQL database dump complete
